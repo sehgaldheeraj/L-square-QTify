@@ -18,7 +18,11 @@ body {
 }
 body {
   line-height: 1.5;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--css-black);
+  color: var(--css-white);
+  overflow-x: hidden;
 }
 img,
 picture,
