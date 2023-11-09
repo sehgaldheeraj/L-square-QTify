@@ -1,0 +1,22 @@
+.mainwrapper {
+  width: 1440px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagewrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: "100%";
+}
+
+.textwrapper {
+  display: flex;
+  flex-direction: column;
+  color: var(--css-white);
+  width: 37.8125rem; /* 605px converted to rem */
+  text-align: center;
+}
