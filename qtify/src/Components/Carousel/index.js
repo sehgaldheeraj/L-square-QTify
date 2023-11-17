@@ -13,13 +13,8 @@ export default ({ data }) => {
     <div className="carousel-container">
       <Swiper
         modules={[Virtual, Navigation, Pagination]}
-        //   onSwiper={setSwiperRef}
         slidesPerView={8}
-        //   centeredSlides={true}
-        spaceBetween={30}
-        //   pagination={{
-        //     type: 'fraction',
-        //   }}
+        spaceBetween={40}
         navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
         virtual
       >
