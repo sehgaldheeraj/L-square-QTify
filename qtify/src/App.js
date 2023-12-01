@@ -32,12 +32,13 @@ function App() {
     <>
       <Navbar />
       <TheHeroSection />
-      <Section navid="ta" title="Top Albums" data={topAlbums} />
-      <Section navid="na" title="New Albums" data={newAlbums} />
+      <Section navid="ta" title="Top Albums" data={topAlbums} type="albums" />
+      <Section navid="na" title="New Albums" data={newAlbums} type="albums" />
       <FilterSection
         title="Songs"
         data={filteredSongs}
         filters={genre}
+        type="songs"
         executeFilter={(genre) => {
           if (genre === "all") {
             setFilteredSongs(allSongs);

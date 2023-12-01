@@ -7,7 +7,7 @@ import Tab from "@mui/material/Tab";
 import Carousel from "../Carousel";
 import { useState } from "react";
 import "./FilterSection.css";
-export default ({ title, data, filters, executeFilter }) => {
+export default ({ title, data, filters, executeFilter, type }) => {
   const [selectedTab, setSelectedTab] = useState(0);
   return (
     <div className="section">
@@ -30,7 +30,7 @@ export default ({ title, data, filters, executeFilter }) => {
           <Tab className="tab" key={f.key} label={f.label} />
         ))}
       </Tabs>
-      <Carousel data={data} navid="filters" />
+      <Carousel data={data} navid="filters" type="songs" />
     </div>
   );
 };

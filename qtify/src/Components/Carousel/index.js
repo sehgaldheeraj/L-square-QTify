@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Card from "../Card";
 import "./carousel.css";
-export default ({ data, navid }) => {
+export default ({ data, navid, type }) => {
   return (
     <div className="carousel-container">
       <Swiper
@@ -23,11 +23,7 @@ export default ({ data, navid }) => {
       >
         {data.map((card) => (
           <SwiperSlide key={card.id}>
-            <Card
-              imageSrc={card.image}
-              followCount={card.follows}
-              label={card.title}
-            />
+            <Card data={card} type={type} />
           </SwiperSlide>
         ))}
       </Swiper>

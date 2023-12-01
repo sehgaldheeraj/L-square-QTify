@@ -40,5 +40,5 @@
 }
 
 .card-label {
-  background-color: var(--css-black);
+  background-color: var(--css-black) !important;
 }
